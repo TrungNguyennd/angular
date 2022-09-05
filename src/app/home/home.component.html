@@ -1,1 +1,11 @@
 <p>home works!</p>
+<h3> chảo bạn <span> {{ name | uppercase }}</span></h3>
+<h2>Chào trung nguyễn bạn đang {{ age }}</h2>
+<span *ngIf="age < 18 ; then condition1; else condition2"> </span>
+
+<br>
+<ng-template #condition1>Bạn dưới 18 tuổi</ng-template>
+<ng-template #condition2>bạn bằng hoặc trên 18 tuổi, bạn quá già !</ng-template>
+<button (click)="tangtuoi()">Tăng tuổi</button>
+
+
